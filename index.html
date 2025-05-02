@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restructa Empreiteira - Soluções em Engenharia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body class="text-gray-100">
+    <!-- Header/Navigation -->
+    <header class="bg-[#46504F] shadow-lg sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <img
+            src="/assets/images/logo.png"
+            alt="Restructa Empreiteira Logo"
+            class="h-12 w-12 rounded-full mr-3"
+          />
+          <span class="text-xl font-bold text-white"
+            >Restructa Empreiteira</span
+          >
+        </div>
+
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li>
+              <a
+                href="#inicio"
+                class="nav-link text-white hover:text-[#EF6526] transition duration-300"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sobre"
+                class="nav-link text-white hover:text-[#EF6526] transition duration-300"
+                >Sobre Nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="#servicos"
+                class="nav-link text-white hover:text-[#EF6526] transition duration-300"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contato"
+                class="nav-link text-white hover:text-[#EF6526] transition duration-300"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="md:hidden text-white focus:outline-none"
+          id="mobile-menu-button"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden hidden bg-[#46504F] w-full py-4" id="mobile-menu">
+        <ul class="flex flex-col items-center space-y-4">
+          <li>
+            <a
+              href="#inicio"
+              class="text-white hover:text-[#EF6526] transition duration-300"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a
+              href="#sobre"
+              class="text-white hover:text-[#EF6526] transition duration-300"
+              >Sobre Nós</a
+            >
+          </li>
+          <li>
+            <a
+              href="#servicos"
+              class="text-white hover:text-[#EF6526] transition duration-300"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contato"
+              class="text-white hover:text-[#EF6526] transition duration-300"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="inicio"
+      class="hero-section min-h-screen flex items-center justify-center text-center px-4"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+          Somos a Empreiteira Restructa!<br />
+          E o prazer é todo nosso...
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 text-gray-200">
+          Na Restructa, oferecemos uma ampla gama de serviços de reforma e
+          manutenção para transformar seus espaços. Desde o planejamento e
+          design até a execução completa, nossa equipe está pronta para atender
+          todas as suas necessidades. Confira um pouco mais das nossas
+          capacidades, e entre em contato com nossa equipe hoje!
+        </p>
+        <a
+          href="https://wa.me/5511999999999"
+          target="_blank"
+          class="bg-[#EF6526] hover:bg-[#d45a22] text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-flex items-center"
+        >
+          <i class="fab fa-whatsapp mr-2 text-xl"></i> Fale Conosco
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-[#46504F]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+          Sobre Nós
+        </h2>
+        <div class="flex flex-col md:flex-row items-stretch">
+          <!-- IMAGEM -->
+          <div class="md:w-1/2 md:pr-10 flex">
+            <div class="w-full h-auto">
+              <img
+                src="/assets/images/sobre-nos.avif"
+                alt="Equipe de construção"
+                class="rounded-lg shadow-xl w-full h-full object-cover max-h-[400px]"
+              />
+            </div>
+          </div>
+
+          <div class="md:w-1/2 flex items-center">
+            <div>
+              <!--<h3 class="text-2xl font-bold mb-6 text-[#EF6526]">
+              Sobre Nós
+            </h3>-->
+              <p class="text-gray-200 mb-6">
+                Na Restructa, transformamos sonhos em realidade. Somos uma
+                empreiteira especializada em reformas e manutenções,
+                comprometida com a excelência e a satisfação dos nossos
+                clientes. Acreditamos que a base de um bom relacionamento é a
+                transparência e a confiança. Estamos ao seu lado em cada etapa
+                do processo, desde o planejamento até a entrega final,
+                garantindo que sua experiência seja tão tranquila quanto o
+                resultado final.
+              </p>
+
+              <!--<h3 class="text-2xl font-bold mb-6 text-[#EF6526]">Nossa Missão</h3>
+                    <p class="text-gray-200 mb-6">Fornecer soluções integradas em engenharia e construção, garantindo qualidade, segurança e sustentabilidade em todos os nossos projetos, superando as expectativas dos clientes e contribuindo para o desenvolvimento da sociedade.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-6 text-[#EF6526]">Nossos Valores</h3>
+                    <ul class="text-gray-200 space-y-2">
+                        <li class="flex items-start"><i class="fas fa-check text-[#EF6526] mr-2 mt-1"></i> <span>Ética e transparência em todas as relações</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-[#EF6526] mr-2 mt-1"></i> <span>Compromisso com a qualidade e segurança</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-[#EF6526] mr-2 mt-1"></i> <span>Inovação e sustentabilidade</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-[#EF6526] mr-2 mt-1"></i> <span>Valorização das pessoas e do meio ambiente</span></li>
+                    </ul>
+                    -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-[#3a4342]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-white">
+          Nossos Serviços
+        </h2>
+        <p class="text-xl text-center mb-16 text-gray-300 max-w-3xl mx-auto">
+          Oferecemos soluções completas para todas as etapas da construção,
+          desde o projeto até a entrega final.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Reformas Card -->
+          <div
+            class="service-card bg-[#46504F] rounded-lg overflow-hidden shadow-lg transition duration-500"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Reformas"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-4 text-[#EF6526]">Reformas</h3>
+              <p class="text-gray-300 mb-6">
+                Transformamos seus espaços com qualidade e eficiência,
+                garantindo resultados que superam expectativas.
+              </p>
+              <button
+                onclick="openModal('reformas')"
+                class="bg-[#EF6526] hover:bg-[#d45a22] text-white font-bold py-2 px-6 rounded-full transition duration-300"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+
+          <!-- Manutenções Card -->
+          <div
+            class="service-card bg-[#46504F] rounded-lg overflow-hidden shadow-lg transition duration-500"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Manutenções"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-4 text-[#EF6526]">
+                Manutenções
+              </h3>
+              <p class="text-gray-300 mb-6">
+                Serviços preventivos e corretivos para manter seu imóvel sempre
+                em perfeitas condições.
+              </p>
+              <button
+                onclick="openModal('manutencoes')"
+                class="bg-[#EF6526] hover:bg-[#d45a22] text-white font-bold py-2 px-6 rounded-full transition duration-300"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+
+          <!-- Laudos Card -->
+          <div
+            class="service-card bg-[#46504F] rounded-lg overflow-hidden shadow-lg transition duration-500"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Laudos"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-4 text-[#EF6526]">
+                Laudos Técnicos
+              </h3>
+              <p class="text-gray-300 mb-6">
+                Avaliações técnicas detalhadas para garantir a segurança e
+                qualidade das edificações.
+              </p>
+              <button
+                onclick="openModal('laudos')"
+                class="bg-[#EF6526] hover:bg-[#d45a22] text-white font-bold py-2 px-6 rounded-full transition duration-300"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-[#46504F]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+          Entre em Contato
+        </h2>
+
+        <div class="flex flex-col md:flex-row justify-center gap-10">
+          <!-- Coluna Esquerda: Contato -->
+          <div class="md:w-1/2 space-y-10">
+            <!-- Contato -->
+            <div>
+              <h3 class="text-2xl font-bold mb-6 text-[#EF6526]">
+                Informações de Contato
+              </h3>
+              <div class="space-y-6">
+                <a
+                  href="https://w.me/5511999999999"
+                  target="_blank"
+                  class="flex items-start"
+                >
+                  <i
+                    class="fab fa-whatsapp text-2xl text-[#EF6526] mr-4 mt-1"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-white">WhatsApp</h4>
+                    <p class="text-gray-300">(11) 99999-9999</p>
+                  </div>
+                </a>
+
+                <div class="flex items-start">
+                  <i
+                    class="fas fa-envelope text-2xl text-[#EF6526] mr-4 mt-1"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-white">Email</h4>
+                    <p class="text-gray-300">contato@construtoraforte.com.br</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <i
+                    class="fas fa-map-marker-alt text-2xl text-[#EF6526] mr-4 mt-1"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-white">Endereço</h4>
+                    <p class="text-gray-300">
+                      Rua das Construções, 123 - Centro, São Paulo/SP
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Redes sociais e pagamento -->
+          <div class="md:w-1/2 space-y-10">
+            <!-- Redes Sociais -->
+            <div>
+              <h3 class="text-2xl font-bold mb-6 text-[#EF6526]">
+                Redes Sociais
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="bg-[#EF6526] hover:bg-[#d45a22] text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300"
+                >
+                  <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#EF6526] hover:bg-[#d45a22] text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300"
+                >
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#EF6526] hover:bg-[#d45a22] text-white rounded-full w-12 h-12 flex items-center justify-center transition duration-300"
+                >
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Formas de Pagamento -->
+            <div>
+              <h3 class="text-2xl font-bold mb-6 text-[#EF6526]">
+                Formas de Pagamento
+              </h3>
+              <div
+                class="flex flex-wrap gap-4 items-center text-gray-300 text-3xl"
+              >
+                <img
+                  src="https://static.wixstatic.com/media/d407ff_bbedfc6ce1b8416c8cf6069a531cbee8~mv2.png/v1/fill/w_224,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bandeira-dos-cartoes-de-credito.png"
+                  class="filter grayscale brightness-75"
+                />
+                <i class="fab fa-pix"></i>
+                <i class="fab fa-bitcoin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3a4342] py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <div class="flex items-center">
+              <img
+                src="/assets/images/logo.png"
+                alt="Restructa Empreiteira"
+                class="h-10 w-10 rounded-full mr-3"
+              />
+              <span class="text-lg font-bold text-white"
+                >Restructa Empreiteira</span
+              >
+            </div>
+            <p class="text-gray-400 mt-2">
+              © 2025 Restructa Empreiteira. Todos os direitos reservados.
+            </p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-[#EF6526] transition duration-300"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-[#EF6526] transition duration-300"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-[#EF6526] transition duration-300"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-[#EF6526] transition duration-300"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Reformas Modal -->
+    <div
+      id="reformas-modal"
+      class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-[#46504F] rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-3xl font-bold text-[#EF6526]">Reformas</h3>
+            <button
+              onclick="closeModal()"
+              class="text-gray-300 hover:text-white text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"
+            id="reformas-content"
+          >
+            <!-- Content will be loaded from JSON -->
+          </div>
+
+          <div class="bg-[#3a4342] p-6 rounded-lg">
+            <p class="text-gray-300">
+              Além de uma extensa lista de fornecedores de confiança para compra
+              de materiais, e uma excelente lista de parceiros para agregar em
+              seu projeto, como fornecedores de Granito, Marcenaria, Vidraçaria,
+              e muito mais! Para que tudo sempre conte com profissionais
+              altamente qualificados, e com experiências passadas de outros
+              clientes já finalizados!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manutenções Modal -->
+    <div
+      id="manutencoes-modal"
+      class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-[#46504F] rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-3xl font-bold text-[#EF6526]">Manutenções</h3>
+            <button
+              onclick="closeModal()"
+              class="text-gray-300 hover:text-white text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"
+            id="manutencoes-content"
+          >
+            <!-- Content will be loaded from JSON -->
+          </div>
+
+          <div class="bg-[#3a4342] p-6 rounded-lg">
+            <p class="text-gray-300">
+              Trabalhamos com diversos tipos de manutenções sendo elas
+              residenciais, condominais, comerciais entre outros... com serviços
+              em pacotes mensais de fornecimento de manutenção, indicado para
+              condomínios e lojas, além de serviços de manutenção emergencial!
+              Conte conosco sempre!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Laudos Modal -->
+    <div
+      id="laudos-modal"
+      class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-[#46504F] rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-3xl font-bold text-[#EF6526]">Laudos Técnicos</h3>
+            <button
+              onclick="closeModal()"
+              class="text-gray-300 hover:text-white text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"
+            id="laudos-content"
+          >
+            <!-- Content will be loaded from JSON -->
+          </div>
+
+          <div class="bg-[#3a4342] p-6 rounded-lg">
+            <p class="text-gray-300">
+              Com uma equipe de profissionais qualificados e experientes,
+              utilizamos as mais modernas tecnologias para realizar análises
+              detalhadas e imparciais. Nossos laudos atendem a todas as normas
+              técnicas e legislações vigentes, oferecendo documentação completa
+              e detalhada, essencial para evitar problemas legais e mitigar
+              riscos. Economize tempo e assegure a credibilidade necessária para
+              processos judiciais, financiamentos e outras transações.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
