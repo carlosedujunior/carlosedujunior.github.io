@@ -1,0 +1,42 @@
+.skill-level {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 4px;
+  border: 1px solid #4b5563;
+}
+.skill-level.filled {
+  background-color: #4b5563;
+}
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 32px;
+  height: calc(100% - 32px);
+  width: 2px;
+  background-color: #e5e7eb;
+}
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+.section {
+  scroll-margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .skill-column {
+    display: none;
+  }
+  .skill-column.mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .skill-column.mobile {
+    display: none;
+  }
+}
