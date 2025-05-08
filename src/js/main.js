@@ -32,92 +32,104 @@ function showSkillsPage(pageNumber) {
 // JSON data
 const skillsData = [
   { name: "Linux", level: 3 },
+  { name: "Windows", level: 4 },
   { name: "Administração de Redes", level: 4 },
+  { name: "Infraestrutura de Rede", level: 4 },
   { name: "Fortigate Firewall", level: 3 },
+  { name: "Cisco Firewall", level: 3 },
   { name: "Cisco Switches", level: 3 },
-  { name: "Windows Server", level: 3 },
+  { name: "Segurança de Rede", level: 3 },
+  { name: "Gestão de Projetos", level: 3 },
+  { name: "Redes Wireless", level: 3 },
+  { name: "Zabbix", level: 4 },
+  { name: "DMZ", level: 3 },
   { name: "AWS", level: 3 },
   { name: "Scrum", level: 2 },
+  { name: "DevOps", level: 2 },
   { name: "Git", level: 3 },
   { name: "Docker", level: 2 },
   { name: "CI/CD", level: 2 },
+  { name: "Microsoft 365", level: 3 },
+  { name: "GSuite", level: 2 },
   { name: "SQL", level: 2 },
   { name: "VOIP", level: 3 },
+  { name: "DHCP", level: 3 },
   { name: "DNS", level: 3 },
   { name: "TCP/IP", level: 4 },
-  { name: "Gestão de Projetos", level: 3 },
-  { name: "DHCP", level: 3 },
-  { name: "DMZ", level: 3 },
   { name: "HTML", level: 3 },
   { name: "Python", level: 2 },
+  { name: "PowerShell", level: 3 },
+  { name: "Bash", level: 3 },
 ];
 
 const experienceData = [
   {
-    company: "Tech Solutions Inc.",
-    position: "Desenvolvedor Full Stack Sênior",
-    startDate: "Jan 2020",
+    company: "Estáter",
+    position: "Analista de TI",
+    startDate: "Mai 2021",
     endDate: "Presente",
     location: "São Paulo, SP",
     description:
-      "Liderança técnica de equipe de desenvolvimento de aplicações web. Arquitetura e implementação de sistemas escaláveis utilizando React, Node.js e MongoDB. Mentoria de desenvolvedores juniores e implementação de boas práticas de código.",
+      "Sou responsável por conduzir migrações estratégicas de infraestrutura, firewalls (Cisco e Fortinet), switches e NAS, em minha empresa e em empresas parceiras. Ao longo da minha trajetória, liderei diversos projetos de modernização de ambientes, com foco na redução de custos e na otimização da infraestrutura. Entre as principais iniciativas, destaco a migração de VMs de um servidor VMware legado para uma solução open-source atualizada e a transição do serviço de monitoramento de Nagios para o Zabbix, garantindo maior eficiência e escalabilidade. Também participei ativamente da migração de um serviço VoIP para a nuvem, proporcionando mais flexibilidade e performance. Na área de cloud computing, implementei a migração de sites corporativos para a AWS, com integração ao GitHub para atualizações automáticas via GitHub Actions. Além disso, reduzi significativamente os custos da AWS ao migrar servidores EC2 para buckets S3 e ao serviço Lightsail. Focado na automação, introduzi scripts em Python, Bash e PowerShell para otimizar processos e agilizar o gerenciamento de tarefas. Outro marco foi a definição e implementação da infraestrutura de rede para um coworking, oferecendo uma solução robusta e escalável.",
   },
   {
-    company: "Digital Agency XYZ",
-    position: "Desenvolvedor Front-end",
-    startDate: "Mar 2017",
-    endDate: "Dez 2019",
+    company: "CS IT Consulting",
+    position: "N1 - IT Support Analyst",
+    startDate: "Jul 2019",
+    endDate: "Abr 2021",
     location: "São Paulo, SP",
     description:
-      "Desenvolvimento de interfaces responsivas e otimizadas para SEO. Implementação de designs complexos com CSS3 e JavaScript. Integração com APIs REST e implementação de autenticação JWT.",
+      "Fui responsável pela administração de servidores Windows e Linux, abrangendo serviços como AD, DHCP, Fileserver, FTP, DNS, Webserver e Appserver. Além disso, gerenciei ambientes de Office 365, G-suite, VMs onpremise e a administração de firewall Fortigate, garantindo a segurança e o desempenho da infraestrutura de TI da empresa. Durante esse período, tive a oportunidade de modernizar a infraestrutura, migrando diversos serviços para o Docker, o que trouxe maior flexibilidade e escalabilidade para o ambiente. Também fui responsável pela atualização de versões do Zabbix, ferramenta essencial para o monitoramento da rede e dos sistemas, e pela automação de processos manuais, o que resultou em um aumento significativo na eficiência operacional. A administração de ambientes híbridos e a implementação de novas tecnologias me permitiram aprimorar minhas habilidades em gestão de servidores, redes e segurança, além de me proporcionar uma visão mais estratégica sobre como otimizar recursos e garantir a continuidade dos serviços. Essa experiência foi fundamental para o meu desenvolvimento técnico, ampliando meu conhecimento sobre soluções de virtualização, containers e automação.",
   },
   {
-    company: "Startup ABC",
-    position: "Estagiário em Desenvolvimento",
-    startDate: "Jan 2016",
-    endDate: "Fev 2017",
+    company: "Penso Tecnologia",
+    position: "Analista de suporte técnico",
+    startDate: "Dez 2017",
+    endDate: "Jul 2019",
     location: "São Paulo, SP",
     description:
-      "Suporte no desenvolvimento de aplicações web. Implementação de funcionalidades front-end com HTML, CSS e jQuery. Participação em reuniões de planejamento ágil e revisões de código.",
+      "Durante minha atuação em uma corretora de seguros, fui responsável por fornecer suporte de TI, garantindo o funcionamento eficiente e seguro dos sistemas. Minhas responsabilidades incluíam a administração de redes. Trabalhei pela primeira vez com a tecnologia VoIP. Gerenciei servidores Windows e Linux, roteadores e switches. Fui também responsável pela gestão de recursos de TI e pela criação de planos de contingência para garantir a continuidade das operações, minimizando impactos em caso de falhas no sistema. Implementamos procedimentos regulares de backup e políticas de recuperação de dados, garantindo a integridade das informações essenciais para a corretora. Outra área importante foi a gestão de segurança da informação, onde implementei medidas como controle de acesso, monitoramento de vulnerabilidades e conformidade com normas e regulamentações de TI. Isso me permitiu adquirir conhecimentos valiosos em governança de TI e proteção de dados. Além disso, analisei as rotinas de trabalho da equipe e implementei melhorias significativas nos processos operacionais, reduzindo o tempo gasto em tarefas manuais e aumentando a eficiência geral. Um dos maiores desafios que enfrentei foi a migração do Tableau 17 para o Tableau 2018.1, que exigiu planejamento e execução cuidadosos para garantir uma transição suave e sem impactos negativos, foram 3 noites de desafios. Essa experiência foi essencial para o meu crescimento, aprimorando minhas habilidades em gestão de infraestrutura, telecomunicações, segurança da informação e análise de processos, além de me permitir integrar soluções tecnológicas às necessidades do negócio.",
+  },
+  {
+    company: "Youpc Informática",
+    position: "Analista de suporte técnico",
+    startDate: "Jul 2014",
+    endDate: "Dez 2017",
+    location: "Santo André, SP",
+    description:
+      "Nesta posição, fui responsável por fornecer suporte remoto a pessoas físicas e jurídicas, atendendo a uma variedade de demandas e resolvendo problemas técnicos, com o objetivo de garantir que seus sistemas e infraestruturas de TI funcionassem de maneira otimizada. Um dos principais aspectos do meu trabalho foi a montagem e manutenção de computadores e servidores. Com esse foco, pude aplicar e expandir meus conhecimentos sobre hardware, desde a instalação de componentes até a realização de diagnósticos e manutenções. Além disso, fui responsável pela configuração de roteadores e switches, trabalhando com tecnologias Cisco e HP. Essa experiência me permitiu aprofundar meus conhecimentos em redes e me familiarizar com a configuração de dispositivos para a operação da infraestrutura de TI. Em termos de servidores Windows, tive a oportunidade de aprender a gerenciar e administrar diversos serviços, como Active Directory (AD), Políticas de Grupo (GPO), DHCP, DNS, File Server e rotinas de Backup. Além disso, participei ativamente na implementação de infraestruturas de rede, tanto cabeadas quanto sem fio. Essa parte do trabalho me proporcionou uma visão mais completa da gestão de redes, desde o planejamento até a execução de soluções que garantem o bom desempenho das redes de computadores. Essa experiência foi fundamental para o meu crescimento técnico, permitindome adquirir habilidades sólidas em diversas áreas de TI, além de me proporcionar uma visão ampla e integrada de como os diferentes sistemas e tecnologias se conectam e funcionam em conjunto. A prática com ferramentas e configurações avançadas me preparou para lidar com desafios complexos.",
+  },
+  {
+    company: "Teleperformance Brasil",
+    position: "Menor Aprendiz",
+    startDate: "2011",
+    endDate: "2012",
+    location: "São Paulo, SP",
+    description:
+      "Fiz parte da primeira turma de menores aprendizes da empresa, o que foi uma experiência enriquecedora. Durante esse período, pude aprender de forma prática e significativa sobre o funcionamento de um ambiente corporativo, desenvolvendo habilidades que se mostraram essenciais para o meu crescimento profissional. Minhas principais responsabilidades incluíam o apoio nas rotinas administrativas, onde aprendi a lidar com atividades diárias como organização de documentos, atendimento telefônico e apoio nas demandas internas da empresa. Além disso, como parte da minha formação, tive a oportunidade de aprimorar o uso do pacote Office, que se tornou uma ferramenta essencial para a execução das minhas tarefas. Embora o ambiente corporativo fosse novo para mim, um dos maiores desafios que enfrentei foi a dificuldade inicial de me adaptar ao trabalho em equipe, além da superação da vergonha de interagir com pessoas de diferentes níveis hierárquicos. No entanto, com o tempo, aprendi a importância da colaboração, desenvolvendo habilidades interpessoais e de comunicação. Trabalhei de forma colaborativa em uma equipe de 7 pessoas, auxiliando os colegas e ajudando na execução de tarefas diárias, o que me proporcionou uma visão ampla e prática do trabalho em conjunto. Essa experiência me permitiu aprender sobre postura corporativa, como interagir de forma profissional, e como lidar com as demandas do dia a dia, compreendendo a importância da organização e da responsabilidade. Esta vivência foi fundamental para que eu pudesse crescer como profissional, aprimorando minhas habilidades técnicas e comportamentais. Este primeiro emprego formal foi a base para muitas das minhas conquistas profissionais, e me preparou para encarar novos desafios.",
   },
 ];
 
 const educationData = [
   {
-    institution: "Universidade de São Paulo (USP)",
-    course: "Bacharelado em Ciência da Computação",
-    startDate: "2013",
-    endDate: "2017",
-    thesis: "Otimização de Algoritmos de Busca em Grafos para Aplicações Web",
-  },
-  {
-    institution: "Instituto Federal de São Paulo (IFSP)",
-    course: "Técnico em Informática",
-    startDate: "2010",
-    endDate: "2012",
+    institution: "Estácio de Sá",
+    course: "Técnologo Redes de Computadores",
+    startDate: "Fev 2015",
+    endDate: "Dez 2017",
+    thesis: "",
   },
 ];
 
 const certificatesData = [
   {
-    institution: "Amazon Web Services (AWS)",
+    institution: "Cisco",
     description:
-      "AWS Certified Developer - Associate - Certificação em desenvolvimento de aplicações na plataforma AWS, incluindo Lambda, DynamoDB e API Gateway.",
+      "Introduction to Packet Tracer - Knowledge and skills to create digital models of IP Networks and IoT Systems using Cisco Packet Tracer.",
   },
   {
-    institution: "Scrum.org",
+    institution: "4Linux",
     description:
-      "Professional Scrum Master I - Certificação em gestão de projetos ágeis utilizando metodologia Scrum.",
-  },
-  {
-    institution: "Udemy",
-    description:
-      "React - The Complete Guide - Curso abrangente sobre desenvolvimento com React, incluindo Hooks, Context API e Redux.",
-  },
-  {
-    institution: "Coursera",
-    description:
-      "UX Design Fundamentals - Fundamentos de pesquisa e design de experiência do usuário.",
+      "DevOps Essentials - Certificação introdutória para o universo DevOps, para entender, conhecer e implantar a cultura.",
   },
 ];
 
@@ -228,15 +240,13 @@ function renderExperience() {
                         <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                             <div class="mb-4 md:mb-0">
                                 <h3 class="text-xl font-semibold">${exp.company}</h3>
-                                <p class="text-gray-600">${exp.position}</p>
-                            </div>
-                            <div class="text-gray-500">
                                 <p>${exp.startDate} - ${exp.endDate}</p>
                                 <p>${exp.location}</p>
+                                <p class="text-gray-600">${exp.position}</p>
                             </div>
                         </div>
                         <div class="mt-4">
-                            <p class="text-gray-700">
+                            <p class="text-gray-700 text-justify">
                                 ${exp.description}
                             </p>
                         </div>
@@ -266,10 +276,8 @@ function renderEducation() {
                         <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                             <div class="mb-4 md:mb-0">
                                 <h3 class="text-xl font-semibold">${edu.institution}</h3>
-                                <p class="text-gray-600">${edu.course}</p>
-                            </div>
-                            <div class="text-gray-500">
                                 <p>${edu.startDate} - ${edu.endDate}</p>
+                                <p class="text-gray-600">${edu.course}</p>
                             </div>
                         </div>
                         ${thesisHtml}
